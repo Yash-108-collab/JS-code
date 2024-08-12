@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color:#ffffff;
+  }
+
+  .order-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .order-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .order-form input[type="text"],
+  .order-form input[type="email"],
+  .order-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .order-form textarea {
+    height: 100px;
+  }
+
+  .order-form button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+<form class="order-form">
+  <h2>Order Online</h2>
+  <p>Select your favorite coffee and place your order.</p>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Name">
+    <br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your Email">
+  <br><br>
+  <label for="phone">Phone Number:</label>
+  <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
+  <br><br>
+  <label for="coffee">Coffee Type:</label>
+  <select id="coffee" name="coffee">
+    <option value="hot beverages">Hot Beverages</option>
+    <option value="cold beverages">Cold Beverages</option>
+    <option value="refreshment">Refreshment</option>
+    <option value="special Combos">Special Combos</option>
+    <option value="burger & french fries">Burger & French Fries</option>
+    <option value="desserts">Desserts</option>
+  </select>
+  <br><br>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" value="1">
+  <br><br>
+  <label for="special-instructions">Special Instructions:</label>
+  <textarea id="special-instructions" name="special-instructions" placeholder="Any special requests?"></textarea>
+  <br><br>
+  <button type="submit">Place Order</button>
+</form>
+
+</body>
+</html>
